@@ -21,7 +21,7 @@ function App() {
   }, [])
 
   async function reviewCode() {
-    const response = await axios.post('https://ai-code-reviewer-ecru.vercel.app', { code })
+    const response = await axios.post('https://ai-code-reviewer-fa58.vercel.app/ai/get-review', { code })
     setReview(response.data)
   }
 
